@@ -1,0 +1,150 @@
+/* General Reset: Remove default margin and padding from some elements */
+body, h2, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes width and height calculations more predictable */
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for centering the form */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style for the form container */
+.form-container {
+    background-color: #fff; /* White background */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+    max-width: 600px; /* Maximum width */
+    width: 100%; /* Full width within container */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Header styling */
+h2 {
+    text-align: center; /* Center-align text */
+    color: #007bff; /* Blue text color */
+    margin-bottom: 20px;
+    font-size: 28px; /* Font size for header */
+    font-weight: 500; /* Medium font weight */
+}
+
+/* Style for input fields */
+.box {
+    width: 100%; /* Full width of the form container */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 6px; /* Slightly rounded corners */
+    font-size: 16px; /* Font size for input text */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Change border color on focus */
+.box:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    background-color: #007bff; /* Blue background for button */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 12px 24px;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    font-weight: 500; /* Medium font weight */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and size */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller font size on small screens */
+    }
+
+    .box {
+        font-size: 14px; /* Smaller font size for input fields */
+    }
+
+    input[type="submit"] {
+        font-size: 14px; /* Smaller font size for submit button */
+    }
+}
+
+/* Style for the success page */
+.success-container {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+    max-width: 500px; /* Maximum width */
+    width: 100%; /* Full width within container */
+    text-align: center; /* Center-align text */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Header styling for success page */
+h1 {
+    color: #fff; /* White text color */
+    font-size: 32px; /* Font size for header */
+    font-weight: 500; /* Medium font weight */
+    margin-bottom: 20px;
+}
+.error-container {
+    background-color: red;
+    color: #fff; /* White text color */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
+    max-width: 500px; /* Maximum width */
+    width: 100%; /* Full width within container */
+    text-align: center; /* Center-align text */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
